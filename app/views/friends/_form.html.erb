@@ -37,6 +37,10 @@
   </div>
 
   <div>
+    <%= form.text_field :user_id, id: :friend_user_id, type: :hidden, value: current_user.id  %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
